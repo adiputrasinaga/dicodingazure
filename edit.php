@@ -32,7 +32,7 @@ if(isset($_POST['update']))
 		}		
 	} else {	
 		//updating the table
-		$result = mysqli_query($mysqli, "UPDATE identitasku SET nama='$nama',jeniskelamin='$jeniskelamin',umur='$umur',email='$email',hobi='$hobi' WHERE id=$id");
+		$result = mysqli_query($mysqli, "UPDATE biodata SET nama='$nama',jeniskelamin='$jeniskelamin',umur='$umur',email='$email',hobi='$hobi' WHERE id=$id");
 		
 		//redirectig to the display page. In our case, it is index.php
 		header("Location: index.php");
@@ -44,7 +44,7 @@ if(isset($_POST['update']))
 $id = $_GET['id'];
 
 //selecting data associated with this particular id
-$result = mysqli_query($mysqli, "SELECT * FROM identitasku WHERE id=$id");
+$result = mysqli_query($mysqli, "SELECT * FROM biodata WHERE id=$id");
 
 while($res = mysqli_fetch_array($result))
 {
