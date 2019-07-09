@@ -36,7 +36,7 @@ if(isset($_POST['Submit'])) {
 		echo "<br/><a href='javascript:self.history.back();'>Kembali</a>";
 	} else { 
 		//masukkan data	
-		$result = mysqli_query($mysqli, "insert into identitasku (nama,jeniskelamin,umur,email,hobi) values ('$nama','$jeniskelamin','$umur','$email','$hobi')");
+		$result = mysqli_query($mysqli, "insert into biodata (nama,jeniskelamin,umur,email,hobi) values ('$nama','$jeniskelamin','$umur','$email','$hobi')");
 		
 		//tampilkan pesan berhasil
 		echo "<font color='green'>Entri data berhasil cuy!";
