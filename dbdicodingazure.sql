@@ -2,7 +2,7 @@ create database dbdicodingazure;
 
 use dbdicodingazure;
 
-CREATE TABLE `identitasku` (
+CREATE TABLE `biodata` (
   `id` int(11) NOT NULL auto_increment,
   `nama` varchar(50) NOT NULL,
   `jeniskelamin` varchar(20) NOT NULL,
