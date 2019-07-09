@@ -1,6 +1,6 @@
-create database dicodingquest;
+create database dbdicodingazure;
 
-use dicodingquest;
+use dbdicodingazure;
 
 CREATE TABLE `identitasku` (
   `id` int(11) NOT NULL auto_increment,
